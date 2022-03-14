@@ -13,11 +13,11 @@ at = AsciiTimeline(4, """
 
 @animation((1080, 540), timeline=at)
 def ascii(f):
-    return (Glyphwise("ABC", lambda g:
+    return (Glyphwise("OHNO", lambda g:
         Style("ObviouslyV", 250
             , wdth=at.ki(g.i).io(8)
             , wght=at.ki("wght").io(10)
             , slnt=at.ki("slnt").io(10)
-            , tu=at.ki("tu").io(10, ["seio", "eeo"], r=(0, 500))))
+            , tu=at.ki("tu").io(10, ["eeo", "eeo"], r=(0, 500))))
         .align(f.a.r, tv=1)
         .f(0)) 
